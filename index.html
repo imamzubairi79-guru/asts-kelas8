@@ -264,7 +264,7 @@
       }
 
       if (savedStatus === "LOCKED") {
-        lockExamPermanently("Anda telah melanggar aturan ujian sebanyak 3 kali.\n\nSilakan hubungi Proktor / Admin untuk pembukaan blokir.");
+        lockExamPermanently("Anda telah melanggar aturan ujian sebanyak 3 kali.\n\nSilakan menghadap Pak Imam / Admin untuk pembukaan blokir.");
       } else if (savedStatus === "TIME_OUT") {
         lockExamPermanently("Waktu pengerjaan ujian (80 menit) telah habis!");
       }
@@ -362,7 +362,7 @@
       document.getElementById("violationCount").innerText = violationCount;
 
       if (violationCount >= maxViolations) {
-        lockExamPermanently("Anda telah melanggar aturan ujian sebanyak 3 kali.\n\nSilakan hubungi Proktor / Admin untuk pembukaan blokir.");
+        lockExamPermanently("Anda telah melanggar aturan ujian sebanyak 3 kali.\n\nSilakan menghadap Pak Imam / Admin untuk pembukaan blokir.");
       } else {
         showTemporaryLock(reason);
       }
